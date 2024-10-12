@@ -28,7 +28,6 @@ jobs:
           source venv/bin/activate
       
       - name: Install dependencies
-        working-directory: end_to_end_tests/
         run: pip install -r requirements.txt
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
@@ -66,9 +65,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_9327055E5F8E4D3D83839AD70869B294 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_24A80E844758415C8DD724AC517A6DDB }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_B5E2FE6E0F74485A8FC6C1EAA456056F }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_3AF05A66DC054CDA983CD6168108E873 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_42B5DBE8DC044378981F2DA1A84758A5 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_B1F0A25D331D40ECA8BB6EAA76C5A7B6 }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
