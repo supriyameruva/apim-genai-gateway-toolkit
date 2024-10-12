@@ -15,3 +15,7 @@ simulator_api_key = os.getenv("SIMULATOR_API_KEY")
 tenant_id = os.getenv("TENANT_ID")
 subscription_id = os.getenv("SUBSCRIPTION_ID")
 resource_group_name = os.getenv("RESOURCE_GROUP_NAME")
+
+
+# Load connection string from environment variable or configuration
+connection_string = os.getenv('AZURE_STORAGE_CONNECTION_STRING')
